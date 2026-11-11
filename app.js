@@ -19,5 +19,8 @@ const startServer = async () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
 };
+app.get("/", (req, res) => {
+  res.send("Leave Management System is running successfully!");
+});
 
 startServer();
